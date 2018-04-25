@@ -1,0 +1,111 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gps3.MapsActivity"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout1"
+
+    >
+    <!-- TestGPSを表示 -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        tools:context="com.example.rapt_hp.gps3.MapsActivity"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/toast1Button"
+            android:layout_width="98dp"
+            android:layout_height="89dp"
+            android:layout_gravity="center_horizontal"
+            android:text="沖島"/>
+
+        <Button
+            android:id="@+id/toast2Button"
+            android:layout_width="118dp"
+            android:layout_height="89dp"
+            android:layout_gravity="center_horizontal"
+            android:text="竹生島"
+            android:layout_weight="0.42" />
+
+        <Button
+            android:id="@+id/toast3Button"
+            android:layout_width="109dp"
+            android:layout_height="89dp"
+            android:layout_gravity="center_horizontal"
+            android:text="多景島"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/toast4Button"
+            android:layout_width="109dp"
+            android:layout_height="89dp"
+            android:layout_gravity="center_horizontal"
+            android:text="プラットフォーム"
+            android:layout_weight="0.33" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp">
+
+
+
+
+
+        <ImageView
+            android:id="@+id/sisei"
+            android:src="@drawable/bou"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <ImageView
+            android:id="@+id/sisei2"
+            android:src="@drawable/yokobou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.gps3.MapsActivity"
+            android:layout_below="@+id/sisei"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+    <!-- 緯度 -->
+
+
+    <!--  -->
+
+
+</LinearLayout>
+</FrameLayout>
